@@ -1,7 +1,6 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Icon from "@/components/ui/icon";
 
@@ -103,16 +102,13 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                className="bg-slate-900/60 border border-purple-900/40 rounded-lg p-6 flex flex-col items-center text-center h-full"
               >
-                <Card className="bg-slate-900/60 border-purple-900/40 h-full">
-                  <CardContent className="p-6 flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center mb-4">
-                      <Icon name={item.icon} className="h-8 w-8" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-gray-400">{item.desc}</p>
-                  </CardContent>
-                </Card>
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center mb-4">
+                  <Icon name={item.icon} className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-gray-400">{item.desc}</p>
               </motion.div>
             ))}
           </div>
