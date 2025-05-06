@@ -21,7 +21,7 @@ const Index = () => {
             </span>
           </Link>
           <nav className="hidden md:flex space-x-6 items-center">
-            <Link to="/" className="hover:text-purple-400 transition-colors">Главная</Link>
+            <Link to="/" className="text-purple-400 transition-colors">Главная</Link>
             <Link to="/models" className="hover:text-purple-400 transition-colors">Модели</Link>
             <Link to="/portfolio" className="hover:text-purple-400 transition-colors">Портфолио</Link>
             <Link to="/contacts" className="hover:text-purple-400 transition-colors">Контакты</Link>

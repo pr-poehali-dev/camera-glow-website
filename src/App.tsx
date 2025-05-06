@@ -24,7 +24,6 @@ const App = () => (
             <Route path="/models" element={<Models />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contacts" element={<Contacts />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
